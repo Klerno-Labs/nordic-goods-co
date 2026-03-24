@@ -3,7 +3,6 @@
 import ProductCard from "@/components/sections/ProductCard";
 import { Product } from "@/types";
 
-import { z } from "zod";
 const products: Product[] = [
   {
     id: "1",

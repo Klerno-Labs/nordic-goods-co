@@ -4,7 +4,6 @@ import ProductCard from "@/components/sections/ProductCard";
 import { Product } from "@/types";
 import { cn } from "@/lib/cn";
 
-import { z } from "zod";
 const featuredProducts: Product[] = [
   {
     id: "1",

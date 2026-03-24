@@ -111,7 +111,7 @@ const ContactForm = () => {
       >
         {isSubmitting ? "Sending..." : "Send Message"}
       </button>
-      {isSuccess && <p className="text-green-500 text-sm mt-2">Thank you! We'll be in touch within 24 hours.</p>}
+      {isSuccess && <p className="text-green-500 text-sm mt-2">Thank you! We&apos;ll be in touch within 24 hours.</p>}
     </form>
   );
 };
