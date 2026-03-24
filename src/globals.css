@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #1A1A1A;
+  --color-secondary: #F9F7F2;
+  --color-accent: #C5A065;
+  --color-background: #F9F7F2;
+  --color-surface: #FFFFFF;
+  --color-text: #222222;
+  --color-muted: #888888;
+  --spacing-base: 8px;
+  --spacing-section: 5rem;
+  --spacing-card: 1.5rem;
+  --spacing-container: 2rem;
+  --spacing-mobile: 1rem;
+  --radius-md: 4px;
+  --radius-full: 9999px;
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
