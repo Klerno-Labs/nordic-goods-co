@@ -1,15 +1,10 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-
 export default function Shipping() {
   return (
-    <main>
-      <Navbar />
-      <h1 className="text-3xl font-bold text-center py-16">Shipping & Returns</h1>
-      <p className="text-center px-4">
-        We offer fast shipping on all orders, with a 30-day return policy to ensure your satisfaction. If you're not completely happy with your purchase, simply return it within 30 days for a full refund.
+    <div>
+      <h1 className="text-4xl font-bold text-center py-16">Shipping & Returns</h1>
+      <p className="text-lg text-center max-w-2xl mx-auto">
+        We offer fast shipping on all orders. If you're not satisfied with your purchase, we have a hassle-free return policy.
       </p>
-      <Footer />
-    </main>
+    </div>
   );
 }

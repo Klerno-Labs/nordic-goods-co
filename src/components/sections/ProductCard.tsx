@@ -1,12 +1,21 @@
-export default function ProductCard() {
+"use client";
+
+import { Product } from "@/types";
+import { cn } from "@/lib/cn";
+
+const ProductCard = ({ product }: { product: Product }) => {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-md">
-      <img src="https://mfile.z.ai/1774356845781-c1ac9479ff0d44cda9e2e20fefb32e37.png?ufileattname=202603242053576bcd61ffe7264f5c_watermark.png" alt="White ceramic vase with greenery" className="w-full h-48 object-cover" />
+    <div className="group relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+      <img src={product.image} alt={product.title} className="object-cover w-full h-64 transition-transform duration-300 group-hover:scale-105" />
       <div className="p-4">
-        <h3 className="text-lg font-semibold">Ceramic Vase</h3>
-        <p className="text-gray-600">$45.00</p>
-        <button className="mt-2 bg-primary text-white px-4 py-2 rounded-lg">Add to Cart</button>
+        <h3 className="text-lg font-semibold text-gray-900">{product.title}</h3>
+        <p className="text-gray-600">${product.price.toFixed(2)}</p>
+        <button className="mt-2 bg-gray-900 text-white py-2 px-4 rounded-lg transition hover:bg-gray-800">
+          Add to Cart
+        </button>
       </div>
     </div>
   );
-}
+};
+
+export default ProductCard;
