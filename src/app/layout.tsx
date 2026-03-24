@@ -3,6 +3,7 @@ import { Inter, Libre_Baskerville, DM_Sans } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "@/styles/globals.css";
+import { z } from "zod";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const libreBaskerville = Libre_Baskerville({
