@@ -1,5 +1,3 @@
-"use client";
-
 import { Metadata } from "next";
 import { Inter, Libre_Baskerville, DM_Sans } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
