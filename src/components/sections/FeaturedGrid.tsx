@@ -1,51 +1,47 @@
-"use client";
-
-import ProductCard from "@/components/sections/ProductCard";
-import { Product } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/cn";
+import { FeaturedGridProps } from "@/types";
 
-import { z } from "zod";
-const featuredProducts: Product[] = [
-  {
-    id: "1",
-    title: "Handcrafted Wooden Bowl",
-    price: 45.99,
-    category: "Home Decor",
-    image: "https://mfile.z.ai/1774356845781-c1ac9479ff0d44cda9e2e20fefb32e37.png?ufileattname=202603242053576bcd61ffe7264f5c_watermark.png",
-    badge: "New",
-    description: "A beautifully crafted wooden bowl perfect for any dining table.",
-  },
-  {
-    id: "2",
-    title: "Organic Wool Blanket",
-    price: 89.99,
-    category: "Textiles",
-    image: "https://mfile.z.ai/1774356816182-d4e4bb5c337541f989f657f0d3795278.png?ufileattname=20260324205328769171c60c3e43ef_watermark.png",
-    badge: "Best Seller",
-    description: "Stay warm and cozy with our organic wool blanket.",
-  },
-  {
-    id: "3",
-    title: "Ceramic Vase",
-    price: 29.99,
-    category: "Home Decor",
-    image: "https://mfile.z.ai/1774356827431-0c7a3219c20d4158b7ed6dc4fba5e817.png?ufileattname=20260324205339460b3f31a2b041db_watermark.png",
-    badge: "Sale",
-    description: "Add a touch of elegance to your home with this ceramic vase.",
-  },
-];
-
-const FeaturedGrid = () => {
+export default function FeaturedGrid({ items }: FeaturedGridProps) {
   return (
-    <section className="py-16 bg-white">
-      <h2 className="text-3xl font-bold text-center mb-8">Featured Products</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
-        {featuredProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+    <section className="py-16 md:py-24 bg-neutral-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          {items.map((item, index) => (
+            <div
+              key={item.id}
+              className={cn(
+                "group relative overflow-hidden rounded-xl bg-white shadow-sm hover:shadow-lg transition-all duration-300",
+                index === 1 ? "md:col-span-2 md:row-span-2" : ""
+              )}
+            >
+              <div className="aspect-[4/5] w-full overflow-hidden bg-neutral-100">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  width={800}
+                  height={1000}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-2xl font-serif text-white mb-2">
+                    {item.title}
+                  </h3>
+                  <Link
+                    href={item.link}
+                    className="inline-block px-6 py-2 bg-white text-black text-sm font-medium rounded-full hover:bg-[#C5A065] hover:text-white transition-colors"
+                  >
+                    Shop Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
-};
-
-export default FeaturedGrid;
+}
