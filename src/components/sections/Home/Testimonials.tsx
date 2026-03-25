@@ -9,7 +9,7 @@ export const Testimonials = () => {
             <p className="mt-4 font-semibold">Maria L.</p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
-            <p className="text-gray-600">"Nordic Goods Co has become my go-to for home decor. Every piece I've purchased has been unique and beautiful."</p>
+            <p className="text-gray-600">"Nordic Goods Co has become my go-to for home decor. Every piece I&apos;ve purchased has been unique and beautiful."</p>
             <p className="mt-4 font-semibold">James T.</p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">

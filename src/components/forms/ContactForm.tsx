@@ -51,7 +51,7 @@ export const ContactForm = () => {
       <button type="submit" disabled={isSubmitting} className="bg-accent text-white py-2 px-4 rounded-lg">
         {isSubmitting ? 'Sending...' : 'Send Message'}
       </button>
-      {isSuccess && <p className="mt-4 text-green-600">Thank you! We'll be in touch soon.</p>}
+      {isSuccess && <p className="mt-4 text-green-600">Thank you! We&apos;ll be in touch soon.</p>}
       {error && <p className="mt-4 text-red-600">{error}</p>}
       <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
     </form>
