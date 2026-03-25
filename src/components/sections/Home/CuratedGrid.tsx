@@ -1,21 +1,31 @@
-import { images } from "@/config/images";
+import { images } from '@/config/images';
 
-export function CuratedGrid() {
+export const CuratedGrid = () => {
   return (
     <section className="py-16">
-      <h2 className="text-3xl font-bold text-center">Curated Collection</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-        {Array.from({ length: 6 }).map((_, index) => (
-          <div key={index} className="bg-white shadow-card rounded-lg overflow-hidden">
-            <img src={images[`gallery-${index + 1}`].src} alt={images[`gallery-${index + 1}`].alt} className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold">Product Title {index + 1}</h3>
-              <p className="text-muted">$49.99</p>
-              <a href={`/product/product-${index + 1}`} className="mt-2 inline-block bg-accent text-white py-2 px-4 rounded">View Details</a>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-center mb-8">Our Curated Collection</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="relative group">
+            <img src={images["gallery-1"].src} alt={images["gallery-1"].alt} className="w-full h-auto object-cover rounded-xl transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="text-white">View Details</span>
             </div>
           </div>
-        ))}
+          <div className="relative group">
+            <img src={images["gallery-2"].src} alt={images["gallery-2"].alt} className="w-full h-auto object-cover rounded-xl transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="text-white">View Details</span>
+            </div>
+          </div>
+          <div className="relative group">
+            <img src={images["gallery-3"].src} alt={images["gallery-3"].alt} className="w-full h-auto object-cover rounded-xl transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="text-white">View Details</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
-}
+};

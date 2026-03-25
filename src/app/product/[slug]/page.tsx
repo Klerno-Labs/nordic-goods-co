@@ -1,22 +1,14 @@
-import { Metadata } from "next";
-import { ProductGallery } from "@/components/sections/Product/ProductGallery";
-import { ProductDetails } from "@/components/sections/Product/ProductDetails";
-import { ProductBenefits } from "@/components/sections/Product/ProductBenefits";
+import { ProductDetails } from '@/components/sections/Product/ProductDetails';
+import { ProductGallery } from '@/components/sections/Product/ProductGallery';
+import { ProductBenefits } from '@/components/sections/Product/ProductBenefits';
 
-export const metadata: Metadata = {
-  title: "Nordic Goods Co - Product Details",
-  description: "Detailed view of the selected product.",
-};
-
-export default function ProductPage() {
+export default function ProductPage({ params }: { params: { slug: string } }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="col-span-1">
-        <ProductGallery />
-      </div>
-      <div className="col-span-1">
-        <ProductDetails />
-        <ProductBenefits />
+    <div className="py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ProductGallery slug={params.slug} />
+        <ProductDetails slug={params.slug} />
+        <ProductBenefits slug={params.slug} />
       </div>
     </div>
   );
