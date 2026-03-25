@@ -6,6 +6,7 @@ import { formatPrice } from "@/lib/utils";
 import { Star, ShoppingCart } from "lucide-react";
 import ProductDetail from "@/components/sections/ProductDetail";
 
+import { z } from "zod";
 // Mock data for demonstration
 const MOCK_PRODUCTS: Product[] = [
   {

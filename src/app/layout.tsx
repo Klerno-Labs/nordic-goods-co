@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 
+import { z } from "zod";
 export const metadata: Metadata = {
   title: 'Nordic Goods Co',
   description: 'Curated online store offering unique, high-quality products with fast shipping and excellent customer service.',

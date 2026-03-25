@@ -1,3 +1,5 @@
+import { z } from "zod";
+
 export const ProductGallery = ({ slug }: { slug: string }) => {
   return (
     <div className="mb-8">
