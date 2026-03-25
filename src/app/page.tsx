@@ -1,23 +1,23 @@
-import { images } from "@/config/images";
+import { Metadata } from "next";
+import { HeroSection } from "@/components/sections/Home/HeroSection";
+import { ValuePropBar } from "@/components/sections/Home/ValuePropBar";
+import { CuratedGrid } from "@/components/sections/Home/CuratedGrid";
+import { Testimonials } from "@/components/sections/Home/Testimonials";
+import { CTASection } from "@/components/Common/CTASection";
 
-export const metadata = {
-  title: "Nordic Goods Co - Curated E-commerce",
-  description: "Discover unique, high-quality products at Nordic Goods Co with fast shipping and excellent customer service.",
-  openGraph: {
-    title: "Nordic Goods Co - Curated E-commerce",
-    description: "Discover unique, high-quality products at Nordic Goods Co with fast shipping and excellent customer service.",
-    images: [images.hero.src],
-  },
+export const metadata: Metadata = {
+  title: "Nordic Goods Co - Home",
+  description: "Discover curated essentials at Nordic Goods Co.",
 };
 
-const HomePage = () => {
+export default function HomePage() {
   return (
-    <main>
-      <section className="min-h-[80vh] flex items-center justify-center bg-cover" style={{ backgroundImage: `url(${images.hero.src})` }}>
-        <h1 className="text-5xl font-bold text-white">Curated for Quality</h1>
-      </section>
-    </main>
+    <>
+      <HeroSection />
+      <ValuePropBar />
+      <CuratedGrid />
+      <Testimonials />
+      <CTASection />
+    </>
   );
-};
-
-export default HomePage;
+}

@@ -1,10 +1,16 @@
-import ContactForm from "@/components/forms/ContactForm";
+import { Metadata } from "next";
+import { ContactForm } from "@/components/forms/ContactForm";
 
-export default function Contact() {
+export const metadata: Metadata = {
+  title: "Nordic Goods Co - Contact Us",
+  description: "Get in touch with Nordic Goods Co.",
+};
+
+export default function ContactPage() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center py-16">Contact Us</h1>
+    <section className="py-16">
+      <h1 className="text-4xl font-bold text-center">Contact Us</h1>
       <ContactForm />
-    </div>
+    </section>
   );
 }

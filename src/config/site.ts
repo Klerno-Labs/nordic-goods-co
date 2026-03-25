@@ -9,14 +9,13 @@ export const siteConfig = {
     twitter: "https://twitter.com/nordicgoodsco",
     instagram: "https://instagram.com/nordicgoodsco",
     facebook: "https://facebook.com/nordicgoodsco",
-    menu: [
-      { label: "Home", href: "/" },
-      { label: "Shop", href: "/shop" },
-      { label: "Collections", href: "/collections" },
-      { label: "About", href: "/about" },
-      { label: "FAQ", href: "/faq" },
-      { label: "Shipping & Returns", href: "/shipping" },
-      { label: "Contact", href: "/contact" },
-    ],
   },
+  navigation: [
+    { title: "Home", href: "/" },
+    { title: "Shop", href: "/shop" },
+    { title: "About", href: "/about" },
+    { title: "Contact", href: "/contact" },
+    { title: "FAQ", href: "/faq" },
+    { title: "Shipping & Returns", href: "/shipping" },
+  ],
 };

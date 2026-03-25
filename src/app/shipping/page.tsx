@@ -1,10 +1,17 @@
-export default function Shipping() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nordic Goods Co - Shipping & Returns",
+  description: "Information about shipping and returns at Nordic Goods Co.",
+};
+
+export default function ShippingPage() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center py-16">Shipping & Returns</h1>
-      <p className="text-lg text-center max-w-2xl mx-auto">
-        We offer fast shipping on all orders. If you&apos;re not satisfied with your purchase, we have a hassle-free return policy.
+    <section className="py-16">
+      <h1 className="text-4xl font-bold text-center">Shipping & Returns</h1>
+      <p className="mt-4 text-lg text-center">
+        We offer fast shipping on all orders. If you are not satisfied with your purchase, you can return it within 30 days for a full refund.
       </p>
-    </div>
+    </section>
   );
 }

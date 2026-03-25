@@ -1,123 +1,113 @@
 export const images = {
-  // Homepage hero banner — the first image visitors see [cogview]
+  // Homepage hero banner — the first image visitors see
   "hero": {
-    src: "https://mfile.z.ai/1774356808347-552ba07d511045deb82e7af171b04586.png?ufileattname=202603242053207d7b38f2f55e4951_watermark.png",
-    alt: "Modern Scandinavian living room with natural light and wooden furniture",
+    src: "https://mfile.z.ai/1774396940874-650981f265f540dc945b4a29905d30e9.png?ufileattname=2026032508021269d5f5a4aadd4a32_watermark.png",
+    alt: "Sleek Scandinavian living room displaying curated goods on a wooden shelf",
     width: 1200,
     height: 800,
   },
 
-  // Alternative hero image (used on inner pages or as fallback) [cogview]
+  // Alternative hero image (used on inner pages or as fallback)
   "hero-alt": {
-    src: "https://mfile.z.ai/1774356807719-853493b1c0e345eabbd283d9856da4c3.png?ufileattname=20260324205320372d01261f434b3d_watermark.png",
-    alt: "Hand holding a handcrafted wooden chair leg",
+    src: "https://mfile.z.ai/1774396940350-66ef252088f44338aabb4561cd2f0755.png?ufileattname=20260325080213634edaeecaed4c6d_watermark.png",
+    alt: "Close-up of textured hand-thrown ceramic pottery in a minimalist white studio",
     width: 1200,
     height: 800,
   },
 
-  // About page or About section on homepage [cogview]
+  // About page or About section on homepage
   "about": {
-    src: "https://mfile.z.ai/1774356807916-f9a28fff1edb4b808c25f5e4d6fb4904.png?ufileattname=2026032420532069bef590119943f5_watermark.png",
-    alt: "Business owner reviewing product quality in office",
+    src: "https://mfile.z.ai/1774396940844-6719738d98c748acb284622a0eb41add.png?ufileattname=20260325080213a8bf200d7c6d45a4_watermark.png",
+    alt: "Fashion merchandiser holding fabric swatch in bright airy workspace",
     width: 1200,
     height: 800,
   },
 
-  // First service card image [cogview]
+  // First service card image
   "service-1": {
-    src: "https://mfile.z.ai/1774356818941-3b4c16fb965f4d908ac3f93744e80f71.png?ufileattname=202603242053282012180b80fe456a_watermark.png",
-    alt: "Warehouse worker sealing a brown cardboard box",
+    src: "https://mfile.z.ai/1774396948476-b09be79167ac44d7bcc35b761357c6e0.png?ufileattname=20260325080221ca5b07be63604914_watermark.png",
+    alt: "Hands carefully opening a premium cardboard shipping box",
     width: 1200,
     height: 800,
   },
 
-  // Second service card image [cogview]
+  // Second service card image
   "service-2": {
-    src: "https://mfile.z.ai/1774356816115-3420fbfdf91949c994c302c5fb09d4a0.png?ufileattname=20260324205328ca7599fd0d0f4b05_watermark.png",
-    alt: "Customer service agent answering a phone",
+    src: "https://mfile.z.ai/1774396951194-6ab798994abb4b6f9f13bafe3344d822.png?ufileattname=20260325080221654eaaabc3634ced_watermark.png",
+    alt: "Customer service representative smiling at a laptop screen",
     width: 1200,
     height: 800,
   },
 
-  // Third service card image [cogview]
+  // Third service card image
   "service-3": {
-    src: "https://mfile.z.ai/1774356816182-d4e4bb5c337541f989f657f0d3795278.png?ufileattname=20260324205328769171c60c3e43ef_watermark.png",
-    alt: "Product being inspected on clean desk",
+    src: "https://mfile.z.ai/1774396948487-8dd56a13d35d4cb1b42fbf9067c464fe.png?ufileattname=202603250802219ad9f7c345134e28_watermark.png",
+    alt: "Magnifying glass revealing intricate details of craftsmanship",
     width: 1200,
     height: 800,
   },
 
-  // Gallery image 1 [cogview]
+  // Gallery image 1
   "gallery-1": {
-    src: "https://mfile.z.ai/1774356827431-0c7a3219c20d4158b7ed6dc4fba5e817.png?ufileattname=20260324205339460b3f31a2b041db_watermark.png",
-    alt: "Minimalist bedroom with textured bedding",
+    src: "https://mfile.z.ai/1774396959320-baf30065b8fc487f94904bff55aa2626.png?ufileattname=20260325080231904b8eee03954367_watermark.png",
+    alt: "Scandinavian coffee table setup with books and a throw",
     width: 1200,
     height: 800,
   },
 
-  // Gallery image 2 [cogview]
+  // Gallery image 2
   "gallery-2": {
-    src: "https://mfile.z.ai/1774356827389-60054dcffeec456d9cef00486eca4a78.png?ufileattname=202603242053390bcf92c8fa704f57_watermark.png",
-    alt: "Raw linen fabric texture with stitching details",
+    src: "https://mfile.z.ai/1774396958587-013b82bd0e544fc384d4320f9e70d193.png?ufileattname=2026032508023121d725f7096744d8_watermark.png",
+    alt: "Chunky knit wool throw on a beige sofa",
     width: 1200,
     height: 800,
   },
 
-  // Gallery image 3 [cogview]
+  // Gallery image 3
   "gallery-3": {
-    src: "https://mfile.z.ai/1774356827436-48fe46f331c34f5bac473fd0af7e439d.png?ufileattname=20260324205339d7ce5599d8ac4bbe_watermark.png",
-    alt: "Raw oak wood planks on wooden table",
+    src: "https://mfile.z.ai/1774396958674-f36594c2f86d4827ab35d86a889b5d10.png?ufileattname=20260325080231076e3cd281e24cd9_watermark.png",
+    alt: "Sleek Scandinavian pendant lamp hanging in a modern room",
     width: 1200,
     height: 800,
   },
 
-  // Gallery image 4 [cogview]
-  "gallery-4": {
-    src: "https://mfile.z.ai/1774356835559-4c08a12ab3514894b1d786305a6ada02.png?ufileattname=202603242053473a34f70f6d104e3e_watermark.png",
-    alt: "Matte black geometric table lamp on marble",
-    width: 1200,
-    height: 800,
-  },
-
-  // Call-to-action section background [cogview]
+  // Call-to-action section background
   "cta": {
-    src: "https://mfile.z.ai/1774356837180-fc53724fe75041a3aefe46803375cc9f.png?ufileattname=20260324205347e958583a9682499b_watermark.png",
-    alt: "Hand reaching out to decor object",
+    src: "https://mfile.z.ai/1774396967440-232d65c596dc430a8845d76492c427d2.png?ufileattname=202603250802390f7fc68a094b49b8_watermark.png",
+    alt: "Modern wooden chair in a bright Scandinavian dining room",
     width: 1200,
     height: 800,
   },
 
-  // Testimonials section background or decoration [cogview]
+  // Testimonials section background or decoration
   "testimonial-bg": {
-    src: "https://mfile.z.ai/1774356835759-7acad49d16aa41cdb383299921458ddb.png?ufileattname=20260324205347a320d27228ea4296_watermark.png",
-    alt: "Geometric Scandinavian rug pattern background",
+    src: "https://mfile.z.ai/1774396966871-d881223c8a7a4064a7a556521483a1af.png?ufileattname=202603250802396451a0ebd39844aa_watermark.png",
+    alt: "Abstract background with soft muted earth tones and lines",
     width: 1200,
     height: 800,
   },
 
-  // Menu item photo 1 [cogview]
-  "menu-1": {
-    src: "https://mfile.z.ai/1774356846347-a586a8d0734c480fa0ff2c57f5f15d8a.png?ufileattname=20260324205357043d19aec05e49a3_watermark.png",
-    alt: "Modern wooden chair in bright room",
+  // Team member photo
+  "team-1": {
+    src: "https://mfile.z.ai/1774396967243-a6e2175094f142eab6a4d11a37730f96.png?ufileattname=20260325080239ec8b3c66599b4df2_watermark.png",
+    alt: "Friendly group of young women working together in a modern office",
     width: 1200,
     height: 800,
   },
 
-  // Menu item photo 2 [cogview]
-  "menu-2": {
-    src: "https://mfile.z.ai/1774356844790-8512e70f3de846e1984f205d59766fd0.png?ufileattname=2026032420535725a4cdadb15243ee_watermark.png",
-    alt: "Folded wool throw blanket on wooden rack",
-    width: 1200,
-    height: 800,
-  },
-
-  // Product photo 1 [cogview]
+  // Product photo 1
   "product-1": {
-    src: "https://mfile.z.ai/1774356845781-c1ac9479ff0d44cda9e2e20fefb32e37.png?ufileattname=202603242053576bcd61ffe7264f5c_watermark.png",
-    alt: "White ceramic vase with greenery",
+    src: "https://mfile.z.ai/1774396975088-536d0cf7a987441a97ff5c81859e70e2.png?ufileattname=20260325080247b2b61b84ac1d47b7_watermark.png",
+    alt: "Stack of matte white ceramic bowls on a rustic wooden bowl",
+    width: 1200,
+    height: 800,
+  },
+
+  // Product photo 2
+  "product-2": {
+    src: "https://mfile.z.ai/1774396975153-8a91dcd35b31468eb47aab6b68be805c.png?ufileattname=202603250802479baec5b1f7f74462_watermark.png",
+    alt: "Beautifully textured wool rug unrolled on concrete floor",
     width: 1200,
     height: 800,
   },
 } as const;
-
-export type ImageSlot = keyof typeof images;

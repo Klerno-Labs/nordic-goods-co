@@ -1,10 +1,17 @@
-export default function About() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nordic Goods Co - About Us",
+  description: "Learn about Nordic Goods Co and our mission.",
+};
+
+export default function AboutPage() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center py-16">About Nordic Goods Co</h1>
-      <p className="text-lg text-center max-w-2xl mx-auto">
-        At Nordic Goods Co, we believe in the beauty of simplicity and the value of quality craftsmanship. Our curated selection of products reflects our commitment to sustainability and style.
+    <section className="py-16">
+      <h1 className="text-4xl font-bold text-center">About Us</h1>
+      <p className="mt-4 text-lg text-center">
+        At Nordic Goods Co, we are dedicated to curating unique, high-quality products that reflect the beauty and simplicity of Nordic design. Our mission is to provide exceptional customer service and fast shipping, ensuring that you receive your items promptly and in perfect condition.
       </p>
-    </div>
+    </section>
   );
 }

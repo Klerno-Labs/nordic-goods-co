@@ -1,10 +1,21 @@
-import ProductGrid from "@/components/sections/ProductGrid";
+import { Metadata } from "next";
+import { ShopFilters } from "@/components/sections/Shop/ShopFilters";
+import { ProductGrid } from "@/components/sections/Shop/ProductGrid";
 
-export default function Shop() {
+export const metadata: Metadata = {
+  title: "Nordic Goods Co - Shop",
+  description: "Shop unique, high-quality products at Nordic Goods Co.",
+};
+
+export default function ShopPage() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center py-16">Shop Our Collection</h1>
-      <ProductGrid />
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="col-span-1">
+        <ShopFilters />
+      </div>
+      <div className="col-span-3">
+        <ProductGrid />
+      </div>
     </div>
   );
 }
