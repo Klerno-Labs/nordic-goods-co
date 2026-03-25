@@ -1,52 +1,36 @@
-# Deployment Guide for Nordic Goods Co
+# Cloudflare Pages Deployment Guide
 
-## Step-by-Step Cloudflare Pages Deployment
-1. **Build the Project for Static Export**
-   Ensure your `next.config.js` has the following settings:
-   ```javascript
-   module.exports = {
-     output: 'export',
-     images: {
-       unoptimized: true,
-     },
-   };
-   ```
+## Step-by-Step Deployment Instructions
 
-2. **Build the Project**
-   Run the following command to build the project:
-   ```bash
-   npm run build
-   ```
+1. **Create a Cloudflare Pages Project**
+   - Log in to your Cloudflare account.
+   - Navigate to the "Pages" section and click on "Create a Project".
+   - Connect your GitHub repository containing the Nordic Goods Co website.
 
-3. **Create a Cloudflare Pages Project**
-   - Go to the Cloudflare dashboard.
-   - Select "Pages" from the sidebar.
-   - Click "Create a Project".
+2. **Configure Build Settings**
+   - Set the **Production Branch** to `main` (or your default branch).
+   - Set the **Build Command** to:
+     ```bash
+     npm run build
+     ```
+   - Set the **Output Directory** to:
+     ```
+     out
+     ```
 
-4. **Connect Your Repository**
-   - Choose your Git provider (GitHub, GitLab, etc.).
-   - Select the repository containing your project.
+3. **Set Environment Variables**
+   - In the Cloudflare Pages settings, navigate to the "Environment Variables" section.
+   - Add the following environment variable:
+     - `NEXT_PUBLIC_API_URL`: Your API base URL.
 
-5. **Configure Build Settings**
-   - **Production Branch**: `main` (or your default branch)
-   - **Build Command**: `npm run build`
-   - **Build Output Directory**: `out` (or the directory where your static files are generated)
+4. **Domain Setup**
+   - After the project is created, you can set up a custom domain.
+   - In the Cloudflare Pages dashboard, go to the "Custom Domains" section.
+   - Follow the instructions to add your domain and configure DNS settings.
 
-6. **Set Environment Variables**
-   If you have any environment variables, add them in the "Environment Variables" section.
+5. **Post-Deploy Checklist**
+   - Ensure SSL is enabled for your custom domain.
+   - Check that redirects are set up correctly if necessary.
+   - Verify Google Analytics is tracking correctly.
 
-7. **Deploy Your Site**
-   Click "Save and Deploy". Your site will be built and deployed.
-
-## Domain Setup Instructions
-1. **Add Custom Domain**
-   - In the Cloudflare Pages dashboard, go to your project settings.
-   - Click on "Custom Domains" and add your domain.
-
-2. **Update DNS Settings**
-   - Follow the instructions provided by Cloudflare to update your DNS settings.
-
-## Post-Deploy Checklist
-- Ensure SSL is enabled for your custom domain.
-- Check for any redirects that need to be set up.
-- Verify Google Analytics integration is working.
+Your site should now be live and accessible via the custom domain you configured.

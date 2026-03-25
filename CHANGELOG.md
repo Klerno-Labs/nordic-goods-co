@@ -1,30 +1,34 @@
 # Changelog
 
 ## Version 1.0.0
-### Features Built
-- **Home Page**: 
-  - Hero section with split layout
-  - Trust signals bar
-  - Featured collections displayed in an asymmetrical grid
-  - Best sellers section
-- **Shop Page**: 
-  - Sidebar filters for categories and materials
-  - Product grid with sorting options
-  - Pagination for product listings
-- **Product Detail Page (PDP)**: 
-  - Large product imagery
-  - Details sidebar with quick add sticky bar
-  - "You might also like" section
-- **Collections Page**: 
-  - Collection header with blurred background
-  - Focused product grid
-- **About Page**: 
-  - Editorial layout with founder story
-- **Shipping & Returns Page**: 
-  - Checklist/accordion style layout
-- **Contact Page**: 
-  - Functional form with validation and honeypot
+- **Home Page**
+  - Implemented asymmetrical hero section with call-to-action.
+  - Added value proposition bar.
+  - Created bento grid for curated product collection.
+  - Integrated testimonials section.
+  - Developed footer with links and contact info.
+
+- **Shop / Collections Page**
+  - Built product grid with sidebar filtering options.
+  - Included quick view functionality for products.
+
+- **Product Details Page (PDP)**
+  - Developed image gallery with zoom functionality.
+  - Added variant selection and "Why we chose this" benefits section.
+
+- **About Page**
+  - Created brand story and team member bios.
+  - Listed services offered with pricing.
+
+- **Contact Page**
+  - Implemented lead generation form with validation and success states.
+
+- **FAQ Page**
+  - Built expandable accordion sections for frequently asked questions.
+
+- **Shipping & Returns Page**
+  - Developed informational layout for shipping and return policies.
 
 ### Known Limitations
-- No backend CMS integration for dynamic content.
-- Payment processing gateway UI is not implemented.
+- No backend payment processing implemented.
+- User authentication features are not included.
