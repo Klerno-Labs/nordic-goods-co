@@ -1,12 +1,10 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/types";
 import { formatPrice } from "@/lib/utils";
 import { Star, ShoppingCart } from "lucide-react";
 import ProductDetail from "@/components/sections/ProductDetail";
 
-import { z } from "zod";
 // Mock data for demonstration
 const MOCK_PRODUCTS: Product[] = [
   {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/cn";
 import { Product } from "@/types";
@@ -49,8 +48,7 @@ export default function ProductCard({ product, isGrid = true }: ProductCardProps
               {formatPrice(product.price)}
             </span>
             <div className="h-5 w-5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[#C5A065]">
-              <svg
-                fill="none"
+              <svg style={{ width: "100%", height: "100%", objectFit: "cover" }}="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 strokeWidth={2}

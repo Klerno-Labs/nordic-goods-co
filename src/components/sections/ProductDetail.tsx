@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Product } from "@/types";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
@@ -63,7 +62,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                   <Star
                     key={i}
                     className={i < Math.floor(product.rating)
-                      ? "h-5 w-5 fill-[#C5A065] text-[#C5A065]"
+                      ? "h-5 w-5 style={{ width: "100%", height: "100%", objectFit: "cover" }}-[#C5A065] text-[#C5A065]"
                       : "h-5 w-5 text-neutral-300"
                     }
                   />
