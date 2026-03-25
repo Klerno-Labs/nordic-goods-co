@@ -9,6 +9,10 @@
     "export": "next export"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.0.0",
+    "@radix-ui/react-dropdown-menu": "^1.0.0",
+    "@radix-ui/react-tooltip": "^1.0.0",
+    "@tailwindcss/typography": "^0.5.0",
     "clsx": "^1.1.1",
     "framer-motion": "^6.0.0",
     "lucide-react": "^0.0.0",
@@ -16,10 +20,7 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "tailwind-merge": "^1.0.0",
-    "@radix-ui/react-accordion": "^1.0.0",
-    "@radix-ui/react-dropdown-menu": "^1.0.0",
-    "@radix-ui/react-tooltip": "^1.0.0",
-    "@tailwindcss/typography": "^0.5.0"
+    "tailwindcss/colors": "*"
   },
   "devDependencies": {
     "postcss": "^8.4.0",
