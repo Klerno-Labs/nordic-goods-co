@@ -2,6 +2,11 @@ import { ProductDetails } from '@/components/sections/Product/ProductDetails';
 import { ProductGallery } from '@/components/sections/Product/ProductGallery';
 import { ProductBenefits } from '@/components/sections/Product/ProductBenefits';
 
+
+export function generateStaticParams() {
+  return [];
+}
+
 export default function ProductPage({ params }: { params: { slug: string } }) {
   return (
     <div className="py-16">
